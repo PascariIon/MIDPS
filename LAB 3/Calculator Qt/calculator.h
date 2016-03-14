@@ -38,6 +38,7 @@ private:
 
     Button *createButton(const QString &text, const char *member);
     void divisionByZero();
+    void rootFromNegative();
     bool calculate(double rightOperand, const QString &pendingOperator);
 
     double sumInMemory;
