@@ -1,2 +1,143 @@
 *.exe
 *.class
+
+# C++ objects and libs
+
+*.slo
+*.lo
+*.o
+*.a
+*.la
+*.lai
+*.so
+*.dll
+*.dylib
+
+# Qt-es
+
+/.qmake.cache
+/.qmake.stash
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+Makefile*
+*build-*
+
+# QtCreator
+
+*.autosave
+
+# QtCtreator Qml
+*.qmlproject.user
+*.qmlproject.user.*
+
+# QtCtreator CMake
+CMakeLists.txt.user
+
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# Eclipse Core
+.project
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# PyDev specific (Python IDE for Eclipse)
+*.pydevproject
+
+# CDT-specific (C/C++ Development Tooling)
+.cproject
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# Java annotation processor (APT)
+.factorypath
+
+# PDT-specific (PHP Development Tools)
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# Tern plugin
+.tern-project
+
+# TeXlipse plugin
+.texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Code Recommenders
+.recommenders/
+
+# IDE files
+*.~*~
+*.local
+*.identcache
+__history
+
+# Delphi Compiler output files
+*.drc
+*.map
+*.jdbg
+*.tds
+*.exe
+*.dll
+*.bpl
+*.dcu
+*.dcp
+
+# C++ Builder Compiler output files
+*.bpi
+*.obj
+*.lib
+*.hpp
+*.i
+*.il?
+*.#??
+*.pbi
+
+# 64bit Delphi/C++Builder files
+*.[ao]
+
+# Lib directories
+jcl/lib/*/*.res
+jcl/lib/*/debug/*.res
+jcl/lib/*/win*/*.res
+jcl/lib/*/win*/debug/*.res
+
+# JCL files
+jcl/bin/*
+jcl/install/dcc32_command.cmd
+jcl/install/dcc32.cfg
+
+# Auto generated compiler version include files
+jcl/source/include/jcld*.inc
+jcl/source/include/jclc*.inc
+jcl/source/include/jclfpc.inc
+jcl/source/include/jclwin32.inc
+
+# InnoSetup installer
+thirdparty/InnoSetup/setupbuild/*
+thirdparty/InnoSetup/Settings.iss
+/thirdparty/makedist/*.log

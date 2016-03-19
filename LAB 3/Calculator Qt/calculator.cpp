@@ -153,7 +153,7 @@ void Calculator::unaryOperatorClicked()
 
     if (clickedOperator == tr("\342\210\232")) {
         if (operand < 0.0) {
-            divisionByZero();
+            rootFromNegative();
             return;
         }
         result = sqrt(operand);
@@ -185,7 +185,8 @@ void Calculator::additiveOperatorClicked()
     Button *clickedButton = qobject_cast<Button *>(sender());
     QString clickedOperator = clickedButton->text();
     double operand = display->text().toDouble();
-
+    if(operand == sumAccumulated)
+        operand = 0;
 
     if (!pendingMultiplicativeOperator.isEmpty()) {
 
@@ -224,6 +225,8 @@ void Calculator::multiplicativeOperatorClicked()
     Button *clickedButton = qobject_cast<Button *>(sender());
     QString clickedOperator = clickedButton->text();
     double operand = display->text().toDouble();
+    if(operand == factorAccumulated)
+        operand = 1;
 
     if (!pendingMultiplicativeOperator.isEmpty()) {
         if (!calculate(operand, pendingMultiplicativeOperator)) {
@@ -242,7 +245,9 @@ void Calculator::multiplicativeOperatorClicked()
 
 void Calculator::equalClicked()
 {
+
     double operand = display->text().toDouble();
+
 
     if (!pendingMultiplicativeOperator.isEmpty()) {
         if (!calculate(operand, pendingMultiplicativeOperator)) {
@@ -365,6 +370,13 @@ void Calculator::divisionByZero()
 {
     clearAll();
     display->setText(tr("Division by 0!"));
+}
+
+
+void Calculator::rootFromNegative()
+{
+    clearAll();
+    display->setText(tr("Invalid input!"));
 }
 
 
