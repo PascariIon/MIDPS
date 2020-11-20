@@ -1,2 +1,2 @@
 # MIDPS
-LabWorks for MIDPSsss
+LabWorks for MIDPS
